@@ -1,0 +1,139 @@
+:root {
+  --env-width: 380px;   /* 👈 cámbialo aquí */
+  --env-height: 240px;
+}
+/* *{
+    outline: 1px solid greenyellow;
+} */
+#envelope {
+  position: relative;
+  width: var(--env-width);
+  height: var(--env-height);
+
+
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.2);
+  cursor: pointer;
+  background-color: #f2ede7   /* crema elegante */;
+
+  /* 👇 textura */
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  background-blend-mode: multiply;
+  box-shadow: 
+    0 10px 30px rgba(0,0,0,0.25),
+    inset 0 -3px 8px rgba(0,0,0,0.2);
+}
+.envlope-wrapper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* align-content: flex-start; */
+}
+.front {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 3;
+}
+
+/* FLAP */
+.flap {
+  border-left: calc(var(--env-width) / 2) solid transparent;
+  border-right: calc(var(--env-width) / 2) solid transparent;
+  border-top: calc(var(--env-height) / 2) solid #f5f5f5;
+  border-bottom: calc(var(--env-height) / 2 - 10px) solid transparent;
+  transform-origin: top;
+  filter: brightness(0.95);
+}
+
+/* BODY */
+.pocket {
+ border-left: calc(var(--env-width) / 2) solid #dfdfdf;
+  border-right: calc(var(--env-width) / 2) solid #dfdfdf;
+  border-bottom: calc(var(--env-height) / 2) solid #dad9d9;
+  border-top: calc(var(--env-height) / 2) solid transparent;
+}
+
+/* LETTER */
+.letter {
+  position: relative;
+  background-color: #f1f1ea;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  top: 5%;
+  border-radius: 6px;
+  z-index: 1;
+  text-align: center;
+  padding-top: 60px;
+}
+
+/* TEXTO */
+.text {
+  font-size: 22px;
+   font-family:"Pinyon Script", cursive;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+/* ANIMACIÓN */
+.open .flap {
+  transform: rotateX(180deg);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.close .flap {
+  transform: rotateX(0deg);
+  transition: transform 0.5s ease;
+  z-index: 5;
+}
+
+.open .letter {
+  transform: translateY(-60px);
+  transition: transform 0.5s ease;
+  z-index: 2;
+}
+
+
+.seal {
+  position: absolute;
+  top: 95px; /* 👈 ajusta según tu flap */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 60px;
+  height: 60px;
+
+  background-image: url("../../assets/41d3f8c138f845cce873ade5a4f52b4a.png");
+  background-size: cover;
+  background-position: center;
+
+  z-index: 10;
+
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.3));
+}
+.open .seal {
+  transform: 
+        translateX(-50%) 
+        translateY(-240px) 
+        translateZ(50px) 
+        scale(1.1) 
+        rotate(180deg);
+
+    z-index: 1;
+}
+.seal::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255,255,255,0.4),
+    transparent 60%
+  );
+}

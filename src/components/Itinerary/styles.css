@@ -1,0 +1,12 @@
+.text-color{
+    color: #1c1914 !important;
+}
+
+.title-itinerary{
+    font-weight: 100;
+    line-height: 1em;
+    font-size: 3.5em;
+    font-family: "Viaoda Libre", serif !important;
+    text-transform: uppercase;
+    color: hsla(68, 29%, 15%, 0.8) !important;
+}

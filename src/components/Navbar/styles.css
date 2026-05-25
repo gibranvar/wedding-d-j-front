@@ -1,0 +1,242 @@
+
+
+.navbarContainer {
+  position: fixed; /* Cambia de relative a fixed */
+  top: 0; /* Asegura que el navbar esté en la parte superior de la página */
+  left: 0;
+  width: 100%;
+  z-index: 3; /* Asegura que el navbar esté encima del HeroSection */
+  margin: 0;
+  box-sizing: border-box;
+  padding-top: 1.5rem;
+  padding-bottom: 1.4vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Fondo transparente por defecto */
+  color: white;
+      transition: background-color 0.3s;
+   /* Fondo semitransparente al desplazarse */
+}
+.navbarContainer.scrolled {
+    background-color: hsla(68, 29%, 15%, 0.9);
+}
+.logoContainer {
+  align-items: center;
+ 
+  cursor: pointer;
+}
+
+.navbarToggle {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.navbarToggle button {
+  margin: 10px;
+  max-width: 30px;
+  min-width: 30px;
+}
+
+.navbarToggleOpen {
+  margin-top: -5px;
+}
+
+.navbarText {
+  display: flex;
+  gap: 9px;
+  font-weight: 400;
+  font-size: 3rem !important;
+  font-family: "Viaoda Libre", serif !important;
+
+}
+.monogram{
+  display:flex;
+  align-items:center;
+ 
+}
+
+.d{
+  margin-right:-6px;
+}
+
+.amp{
+  
+  margin-right:2.5px;
+}
+
+.j{
+  margin-left:-4px;
+}
+.font {
+  font-family: "Viaoda Libre", serif !important;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: hsla(68, 29%, 15%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+ 
+  color: white;
+  padding: 10px 0;
+  align-items: center;
+  line-height: 2;
+}
+
+.lista li {
+  margin-left: 7vw;
+  margin-right: 7vw;
+  font-weight: lighter;
+  font-size: 2rem;
+  transition: color 1.5s ease;
+}
+.lista button{
+  color: white;
+}
+.lista button:hover {
+  color: #D4A5A5;
+}
+
+hr {
+  height: 1px; border: none;
+  background-color: #e7e7e7;
+  margin-left: 2vw !important;
+  margin-right: 2vw !important;
+  border-top: none;
+}
+
+.menu-transition-enter {
+  opacity: 0;
+  transform: translateY(0%);
+}
+
+.menu-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 800ms, transform 400ms;
+}
+
+.menu-transition-exit {
+  opacity: 100%;
+  transform: translateY(-0.5%);
+}
+
+.menu-transition-exit-active {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 300ms, transform 4500ms;
+}
+/* Móvil pequeño: hasta 480px */
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+.navbarContainer .lista li a {
+  color: white; /* color por defecto */
+  text-decoration: none;
+  font-family: "Viaoda Libre", serif !important;
+}
+
+.navbarContainer .menu .lista li.active button:hover {
+  color: #D4A5A5; /* Cambia el color del texto activo */
+  text-decoration: underline;
+ /* Estilo adicional para el ítem activo */
+}
+.navbarContainer .lista li a {
+  color: white;
+  text-decoration: none;
+}
+/* Tu CSS existente */
+.navbarContainer .lista li.active a {
+  color: #D4A5A5;
+  text-decoration: underline;
+}
+
+
+.rsvp-button{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.rsvp-button-style{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5em 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+
+  font-family: "Viaoda Libre", serif !important;
+
+}
+.rsvp-button-style:hover {
+  background-color: white;
+  color: #000000;
+}
+.navbarContainer button {
+  font-family: "Viaoda Libre", serif ;
+}
+
+@media (max-width: 480px) {
+  .navbarText { font-size: 7vw; }
+  .font { font-size: 36px; }
+  .rsvp-button-style{
+    padding: 0.5em 2.8rem;
+  }
+  .lista {
+  padding: 1vh 0 5vh 0 ;
+  
+}
+}
+
+/* Tablet: 481px – 1023px */
+@media (min-width: 481px) and (max-width: 1023px) {
+  .navbarText { font-size: 3vw; }
+  .font { font-size: 38px; }
+  /* El toggle sigue visible en tablet */
+}
+
+/* Desktop: 1024px en adelante */
+@media (min-width: 1024px) {
+  .navbarText { gap: 7px; font-size: 1.5rem; }
+  .font { font-size: 35px; }
+  .navbarToggle { display: none; }
+  .rsvp-button-style{
+    padding: 0.5em 2.2rem;
+  }
+  .desktop-menu { display: flex; justify-content: center; align-items: center; flex: 1; }
+  .desktop-menu .lista { flex-direction: row; margin: 0; }
+  .desktop-menu .lista li {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  .rsvp-button-style { font-size: 1.5vw; }
+}
+.rsvp-button div{
+  padding-top: 0 !important;
+}
