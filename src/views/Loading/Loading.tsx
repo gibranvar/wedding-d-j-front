@@ -87,7 +87,7 @@ export default function Envelope() {
   <span>Daniel</span>
     <br />
   <span className="ampersand">&</span>
-
+ <br />
   <span>Jasmine</span>
 </span>
 

@@ -366,7 +366,7 @@ const EventDetails = () => { const mainImg = bgImages[2];
             </DetailRow>
             <DetailRow>      
               <Value>
-                We kindly invite our guests to dress in elegant formal attire inspired by the warmth and romance of the Mediterranean. Think soft sunset hues, warm neutrals, champagne, blush, sand, caramel, taupe, soft gold, and muted earthy tones.<br />
+                We invite our guests to dress in elegant formal attire inspired by the warmth and romance of the Mediterranean. Think soft sunset hues, warm neutrals, champagne, blush, sand, caramel, taupe, soft gold, and muted earthy tones.<br />
                 Floor-length gowns and refined evening dresses are encouraged for ladies, while suits or tuxedos are requested for gentlemen.
               </Value>
             </DetailRow>

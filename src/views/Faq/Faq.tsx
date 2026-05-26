@@ -201,7 +201,7 @@ const faqs = [
   {
   question: "Are specific colors required for the dress code?",
   answer: [
-    "- We kindly invite guests to embrace a soft, elegant palette inspired by the Mediterranean setting.",
+    "- We invite guests to embrace a soft, elegant palette inspired by the Mediterranean setting.",
 
     "- We encourage tones such as champagne, blush, taupe, warm neutrals, soft browns, and muted greens.",
 
