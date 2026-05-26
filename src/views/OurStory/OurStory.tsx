@@ -158,7 +158,7 @@ const OurStory: React.FC = () => {
         </StoryText>
 
         <StoryText  data-aos="fade-up">
-        Our proposal took place near Echo Park in Los Angeles during what was
+        Our proposal took place near MacArthur Park in Los Angeles during what was
         meant to be a casual photoshoot with a friend. As soon as we arrived,
         it became clear that the moment would become one of the most
         meaningful memories of our story — the beginning of a new chapter

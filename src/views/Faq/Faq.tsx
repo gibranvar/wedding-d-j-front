@@ -199,12 +199,19 @@ const faqs = [
   },
 
   {
-    question: "Are specific colors required for the dress code?",
-    answer:
-      "We kindly invite our guests to dress in elegant formal attire inspired by the warmth and romance of the Mediterranean. Think soft sunset hues, warm neutrals, champagne, blush, sand, caramel, taupe, soft gold, and muted earthy tones.",
-  },
+  question: "Are specific colors required for the dress code?",
+  answer: [
+    "- We kindly invite guests to embrace a soft, elegant palette inspired by the Mediterranean setting.",
 
+    "- We encourage tones such as champagne, blush, taupe, warm neutrals, soft browns, and muted greens.",
 
+    "- For men, tailored suits and linen sets in these shades are ideal. Classic black and charcoal are also welcome for suits and formalwear.",
+
+    "- For women, we encourage lighter, airy tones.",
+
+    "- Subtle prints within the palette are welcome.",
+  ],
+},
   {
     question: "Will transportation be provided?",
     answer:
@@ -215,6 +222,16 @@ const faqs = [
     question: "Can I bring a plus one?",
     answer:
       "Due to limited capacity, invitations are extended only to the guests listed on your invitation.",
+  },
+  {
+    question: "What is the weather like in Mallorca during this time?",
+    answer:
+      "Mallorca is warm and sunny with beautiful Mediterranean weather. Expect daytime highs around 73–84°F and cooler, comfortable evenings around 59–70°F. The days are generally sunny and ideal for enjoying the beach, pool, and outdoor activities.",
+  },
+  {
+    question: "Do you have local recommendations for things to do in Mallorca?",
+    answer:
+      "Yes, we’ve put together a curated list of recommended beaches, towns, restaurants, and scenic spots to explore during your stay. Please see the bottom of the Travel & Stay section for the full list.",
   },
 ];
 
@@ -242,8 +259,14 @@ const FAQ = () => {
               </Accordion.Header>
 
               <AccordionContent>
-                <Answer>{faq.answer}</Answer>
-              </AccordionContent>
+  {Array.isArray(faq.answer) ? (
+    faq.answer.map((text, i) => (
+      <Answer key={i}>{text}</Answer>
+    ))
+  ) : (
+    <Answer>{faq.answer}</Answer>
+  )}
+</AccordionContent>
             </AccordionItem>
           ))}
         </AccordionRoot>

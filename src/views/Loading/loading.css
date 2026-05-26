@@ -137,3 +137,30 @@
     transparent 60%
   );
 }
+.mobile-names {
+  display: none;
+}
+
+.desktop-names {
+  display: inline;
+}
+
+@media (max-width: 767px) {
+  .mobile-names {
+    display: inline;
+    line-height: 1.1;
+  }
+
+  .desktop-names {
+    display: none;
+  }
+}
+.ampersand {
+  margin-right: 1.5rem;
+}
+@media (min-width: 768px) {
+  .ampersand {
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+  }
+}

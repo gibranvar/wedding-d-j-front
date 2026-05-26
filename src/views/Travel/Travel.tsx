@@ -648,33 +648,7 @@ const EventDetails = () => { const mainImg = bgImages[1];
       
       {/* CEREMONY */}
 
-      <Row reverse data-aos="fade-up">
-        <Content>
-          <ScriptTitle>Transportation</ScriptTitle>
-          <DetailGrid>
-            
-            <DetailRow>      
-              <Value>
-               Guest transportation will be provided between the villa and the ceremony venue, with return service back to the villa. Additional transportation details will be shared closer to the wedding date.
-               <br/>
-               
-              </Value>
-            </DetailRow>
-           
-          </DetailGrid>
-        </Content>
-        <ImageContainer>
-          <ImageWrapper>
-            <img src="https://i.pinimg.com/736x/77/25/76/77257604dbcc2c1c438c8831fb3f8e50.jpg" alt="Flor de Mandarina Hotel" />
-          </ImageWrapper>
-        </ImageContainer>
-      </Row>
-
-      
-
-      {/* RECEPTION */}
-
-      <Row data-aos="fade-up" >
+    <Row reverse data-aos="fade-up" >
         <Content>
           <ScriptTitle>Flights</ScriptTitle>
           <DetailGrid>
@@ -698,15 +672,43 @@ const EventDetails = () => { const mainImg = bgImages[1];
           </ImageWrapper>
         </ImageContainer>
       </Row>
+      <Row  data-aos="fade-up">
+        <Content>
+          <ScriptTitle>Transportation</ScriptTitle>
+          <DetailGrid>
+            
+            <DetailRow>      
+              <Value>
+               While taxis, Uber (limited availability), and private transfers are available at Palma Airport, renting a car is often the easiest way to explore the island at your own pace.
+                Car rentals are available directly at the airport for convenient pick-up on arrival.
+                <br/>For the wedding itself, guest transportation will be provided between the villa and the ceremony venue, with return service back to the villa.
+                Additional transportation details will be shared closer to the wedding date.
+               <br/>
+               
+              </Value>
+            </DetailRow>
+           
+          </DetailGrid>
+        </Content>
+        <ImageContainer>
+          <ImageWrapper>
+            <img src="https://i.pinimg.com/736x/77/25/76/77257604dbcc2c1c438c8831fb3f8e50.jpg" alt="Flor de Mandarina Hotel" />
+          </ImageWrapper>
+        </ImageContainer>
+      </Row>
+      
+
+      {/* RECEPTION */}
+
+      
+
           <ScriptTitle data-aos="fade-up" >Wedding Weekend Guide</ScriptTitle>
           <MapContainer data-aos="fade-up" >
           <Value>
                To make your wedding weekend experience as seamless and enjoyable as possible, we’ve highlighted the ceremony and reception venues, nearby recommended areas to stay, and Palma de Mallorca Airport for easier travel planning.
                 <br/><br/>
                 We recommend staying in the Alcudia area or near Es Blau des Nord, both known for their beautiful Mediterranean atmosphere and convenient access to the celebrations.
-               <br/><br/>
-                <strong >
-                A small travel tip we want to share is  that the best way to get around Mallorca is by renting a car, although taxis and Uber are also available</strong >
+               
           </Value>
           <MapFrameWrapper>
               <iframe

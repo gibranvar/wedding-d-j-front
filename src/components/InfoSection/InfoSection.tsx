@@ -200,10 +200,8 @@ const EditorialSection: React.FC = () => {
               <ScriptTitle>Travel & Stay</ScriptTitle>
 
               <Description>
-                We are so grateful that many of you will be travelling to
-                Mallorca to celebrate with us. We have curated a selection of
-                our favorite hotels, restaurants, and places to explore during
-                your stay.
+                We are so grateful that many of you will be traveling to Mallorca to celebrate with us.
+                We have put together a curated selection of highly recommended hotels, restaurants, and places to explore during your stay.
               </Description>
 
               <ViewMoreLink href="/#/travel">

@@ -13,8 +13,11 @@ const breakpoints = {
 };
 
 const Overlay = styled.div`
- justify-content: center;
-    height: 100vh;
+justify-content: flex-start;
+padding-top: 12vh;
+padding-bottom: 3vh;
+box-sizing: border-box;
+   min-height: 100vh;
     width: 100%;
     background: hsla(68, 29%, 15%);
     z-index: 1000;
@@ -26,34 +29,34 @@ const Overlay = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 2.5vh;
+  font-size: 1.9vh;
   text-align:  center;
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   color: rgb(254, 253, 250);
+  @media (min-width: ${breakpoints.sm}) {
+    font-size: 1.2rem;  
+  }
   `
-const SubTitle = styled.h2`
+const SubTitle = styled.div`
   text-align: center;
     font-weight: 100;
     line-height: 1;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
    font-family: "Monsieur La Doulaise", cursive;
   max-width: 600px;
-
-  margin: 3rem auto 0 auto;
+  margin: 0 auto 0 auto;
   color:rgb(254, 253, 250);
   @media (max-width: ${breakpoints.md}) {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
   
   @media (min-width: ${breakpoints.sm}) {
     font-weight: 100;
-    padding-bottom: 2rem;
-    font-size: 4.5rem;
-   
-  
+    padding-bottom: 0.5rem;
+    font-size: 4.8rem;  
   }
   `
 
@@ -78,9 +81,21 @@ export default function Envelope() {
 
   return (
     <Overlay>
-    <Title>we’re getting married</Title>
-    <SubTitle>Daniel<br/>&<br/>Jasmine</SubTitle>
-    <div className="envlope-wrapper">
+    <Title  data-aos="fade-up" >we’re getting married</Title>
+    <SubTitle  data-aos="fade-up"><SubTitle>
+      <span className="mobile-names">
+  <span>Daniel</span>
+    <br />
+  <span className="ampersand">&</span>
+
+  <span>Jasmine</span>
+</span>
+
+      <span className="desktop-names">
+        Daniel <span className="ampersand">&</span> Jasmine
+      </span>
+</SubTitle> </SubTitle>
+    <div className="envlope-wrapper" data-aos="fade-up">
       <div
         id="envelope"
         className={open ? "open" : "close"}
@@ -96,7 +111,7 @@ export default function Envelope() {
       </div>
       
     </div>
-    <Description>
+    <Description  data-aos="fade-up">
       CLICK ENVELOPE TO OPEN
     </Description>
     </Overlay>

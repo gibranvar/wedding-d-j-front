@@ -378,7 +378,7 @@ const handleSubmit = (e: React.FormEvent) => {
           <h5>Songs for Us</h5>
           <p className="songs-description">
             Drop a song that reminds you of us as a couple, plus one song for
-            each of us individually. Be creative with your picks.
+            each of us individually. Be creative with your picks. 🤍
           </p>
 
           <div className="songs-inputs">

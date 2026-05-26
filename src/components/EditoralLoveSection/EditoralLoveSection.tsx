@@ -213,7 +213,7 @@ const EditorialLoveSection: React.FC = () => {
 
           <SmallContent>
             <SmallText>
-             We met during one of the most unexpected seasons of life, and somewhere between long parking lot clinic shifts, quarantining, plus navigating our careers, we found a love that felt effortless, fun and meant to be.
+             We met during one of the most unexpected seasons of life, and somewhere between long parking lot clinic shifts, quarantining, plus navigating our careers, we found a love that felt effortless, fun, and meant to be.
             </SmallText>
             <SmallImage>
               <img
