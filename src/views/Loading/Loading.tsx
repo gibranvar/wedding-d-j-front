@@ -21,7 +21,7 @@ const Overlay = styled.div`
   padding-bottom: 3vh;
   box-sizing: border-box;
 
-  height: 100vh;
+  min-height: 100dvh;
   width: 100%;
 
   background: hsla(68, 29%, 15%);
@@ -102,12 +102,12 @@ export default function Envelope() {
   };
 
   return (
-    <Overlay data-aos="fade-up">
-      <Title >
+    <Overlay>
+      <Title data-aos="fade-up">
         we’re getting married
       </Title>
 
-      <SubTitle >
+      <SubTitle data-aos="fade-up">
         <span className="mobile-names">
           <span>Daniel</span>
 
@@ -125,7 +125,7 @@ export default function Envelope() {
         </span>
       </SubTitle>
 
-      <div className="envlope-wrapper" >
+      <div className="envlope-wrapper" data-aos="fade-up">
         <div
           className="seal"
           style={{
