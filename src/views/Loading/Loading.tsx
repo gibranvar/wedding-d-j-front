@@ -102,12 +102,12 @@ export default function Envelope() {
   };
 
   return (
-    <Overlay>
-      <Title data-aos="fade-up">
+    <Overlay data-aos="fade-up">
+      <Title >
         we’re getting married
       </Title>
 
-      <SubTitle data-aos="fade-up">
+      <SubTitle >
         <span className="mobile-names">
           <span>Daniel</span>
 
@@ -125,7 +125,7 @@ export default function Envelope() {
         </span>
       </SubTitle>
 
-      <div className="envlope-wrapper" data-aos="fade-up">
+      <div className="envlope-wrapper" >
         <div
           className="seal"
           style={{
@@ -151,7 +151,7 @@ export default function Envelope() {
         </div>
       </div>
 
-      <Description data-aos="fade-up">
+      <Description >
         CLICK ENVELOPE TO OPEN
       </Description>
     </Overlay>
