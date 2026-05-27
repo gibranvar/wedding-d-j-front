@@ -59,9 +59,9 @@ const SubTitle = styled.div`
 
   font-size: 2.8rem;
 
-  font-family: "Monsieur La Doulaise", cursive;
+  font-family: "Monsieur La Doulaise", cursive !important;
 
-  max-width: 600px;
+  width: 100%;
 
   margin: 0 auto 0 auto;
 
@@ -108,21 +108,21 @@ export default function Envelope() {
       </Title>
 
       <SubTitle data-aos="fade-up">
-        <span className="mobile-names">
-          <span>Daniel</span>
+         <div className="mobile-names">
+         <h1 className="subtitle-font ampersand">Daniel</h1>
 
-          <br />
+          <h1 className="ampersand subtitle-font">&</h1>
 
-          <span className="ampersand">&</span>
+          <h1 className="subtitle-font">Jasmine</h1>
+        </div>
 
-          <br />
+        <div className="desktop-names">
+         <h1 className="subtitle-font">Daniel</h1>
 
-          <span>Jasmine</span>
-        </span>
+  <h1 className="ampersand subtitle-font">&</h1>
 
-        <span className="desktop-names">
-          Daniel <span className="ampersand">&</span> Jasmine
-        </span>
+  <h1 className="subtitle-font">Jasmine</h1>
+        </div>
       </SubTitle>
 
       <div className="envlope-wrapper" data-aos="fade-up">

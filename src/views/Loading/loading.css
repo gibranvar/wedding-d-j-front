@@ -137,7 +137,8 @@
 
 .mobile-names {
   display: none;
-  overflow: visible;
+   text-align: center;
+  width: 100%;
 }
 
 .desktop-names {
@@ -147,7 +148,7 @@
 
 @media (max-width: 767px) {
   .mobile-names {
-    display: inline;
+    display: block;
     line-height: 1.1;
   }
 
@@ -163,4 +164,8 @@
     margin-right: 1.2rem;
     margin-left: 1.2rem;
   }
+}
+.subtitle-font {
+ font-family: "Monsieur La Doulaise", cursive !important;
+ text-align: center;
 }
