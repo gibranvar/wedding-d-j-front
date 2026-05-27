@@ -137,6 +137,7 @@
 
 .mobile-names {
   display: none;
+  overflow: visible;
 }
 
 .desktop-names {
