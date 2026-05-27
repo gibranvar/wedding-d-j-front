@@ -22,8 +22,8 @@ const iCalendarButton: React.FC<iCalendarButtonProps> = () => {
   endDate="2026-09-29"
   endTime="02:00"
   timeZone="America/Los_Angeles"
-  location="Eglesia Nova https://maps.app.goo.gl/ACDgcFYTNNFZG7G76"
-  options={['Apple', 'Google']}
+  location="Eglesia Nova https://maps.app.goo.gl/ACDgcFYTNNFZG7G76, Son Doblons https://maps.app.goo.gl/FdtYcQD8aTGmoLhv6"
+  options={['Google','Apple', 'Outlook.com']}
   buttonStyle="3d"
   hideBackground
   hideCheckmark

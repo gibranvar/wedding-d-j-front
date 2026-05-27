@@ -45,6 +45,7 @@
   border-bottom: calc(var(--env-height) / 2 - 10px) solid transparent;
   transform-origin: top;
   filter: brightness(0.95);
+  
 }
 
 /* BODY */
@@ -105,8 +106,8 @@
   left: 50%;
   transform: translateX(-50%);
   
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
 
   background-image: url("../../assets/41d3f8c138f845cce873ade5a4f52b4a.png");
   background-size: cover;
@@ -131,12 +132,9 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: radial-gradient(
-    circle at 30% 30%,
-    rgba(255,255,255,0.4),
-    transparent 60%
-  );
+  
 }
+
 .mobile-names {
   display: none;
 }

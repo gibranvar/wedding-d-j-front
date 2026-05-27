@@ -9,6 +9,8 @@ import Footer from "../../components/Footer/Footer";
 import { bgImages } from '../../helpers/background';
 import ModalGallery from "../../components/ModalGallery/ModalGallery";
 import { dressCodeImages } from "../../helpers/dresscodeImages";
+import ICalendarButton from "../../components/CalendarSection/iCalendarButton";
+import CalendarButtonEvent from "./CalendarButtonEvent";
 
 
 interface HeroSectionContainerProps {
@@ -264,7 +266,7 @@ const ViewMoreInfo = styled.a`
   transition: opacity 0.3s ease;
 
   width: fit-content;
-
+  margin-bottom: 0.5rem;
   &:hover {
     color:#6d6a43;
     border-bottom: 1px solid #6d6a43;
@@ -308,6 +310,16 @@ const EventDetails = () => { const mainImg = bgImages[2];
               <Value>5:00 PM</Value>
               <ViewMoreInfo href="https://maps.app.goo.gl/q6DrANYvrCPVzGDw5?g_st=ic"
               target="_blank">Eglesia Nova</ViewMoreInfo>
+              <CalendarButtonEvent
+                name="Ceremony at Eglesia Nova"
+                description="Join us for our wedding ceremony at the beautiful Església Nova in Son Servera, Mallorca — a breathtaking open-air historic church surrounded by Mediterranean charm and timeless architecture."
+                startDate="2026-09-28"
+                startTime="17:00"
+                endDate="2026-09-28"
+                endTime="18:00"
+                location="Eglesia Nova, Son Servera, Mallorca, Spain https://maps.app.goo.gl/q6DrANYvrCPVzGDw5?g_st=ic"
+                label="ADD TO CALENDAR"
+              />
             </DetailRow>
             <DetailRow>      
               <Value>
@@ -336,6 +348,16 @@ const EventDetails = () => { const mainImg = bgImages[2];
             <DetailRow>
               <Value>7:30 PM</Value>
               <ViewMoreInfo href="https://maps.app.goo.gl/FdtYcQD8aTGmoLhv6?g_st=ic" target="_blank">Son Doblons</ViewMoreInfo>
+              <CalendarButtonEvent
+                name="Reception at Son Doblons"
+                description="After the ceremony, we invite you to celebrate with us at Son Doblons — an elegant countryside estate in Mallorca where the evening will continue with dinner, music, dancing, and unforgettable moments under the stars."
+                startDate="2026-09-28"
+                startTime="19:30"
+                endDate="2026-09-29"
+                endTime="02:00"
+                location="Son Doblons, Mallorca, Spain https://maps.app.goo.gl/kX1x57WEdEJDTuYE9"
+                label="ADD TO CALENDAR"
+/>
             </DetailRow>
             
             <DetailRow>
