@@ -49,7 +49,7 @@ const GuestForm: React.FC = () => {
   const [otherAllergies, setOtherAllergies] = useState<string>("");
   useEffect(() => {
     axios
-      .get("https://wedding-d-j-back.onrender.com/api/guests")
+      .get("https://web-production-bfb0e.up.railway.app/api/guests")
       .then((response) => {
         setGuests(response.data);
         if (selectedName) {
@@ -169,7 +169,7 @@ const handleSubmit = (e: React.FormEvent) => {
   }
 
     axios
-      .post("https://wedding-d-j-back.onrender.com/api/update-guest", {
+      .post("https://web-production-bfb0e.up.railway.app/api/update-guest", {
         name: selectedName,
         tickets,
         telephone,

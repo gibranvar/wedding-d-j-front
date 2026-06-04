@@ -28,7 +28,7 @@ const GuestTable: React.FC = () => {
 >('all');
 
   useEffect(() => {
-    axios.get('https://wedding-d-j-back.onrender.com/api/guests')
+    axios.get('https://web-production-bfb0e.up.railway.app/api/guests')
       .then(response => {
         setGuests(response.data);
       })
