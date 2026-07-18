@@ -90,7 +90,7 @@ const RsvpSection: React.FC<RsvpSectionProps> = ({
              <Overlay/>
             <RsvpSectionTitle className="title-rsvp">{title}</RsvpSectionTitle>
             <RsvpSectionSubtitle>We would love to share this special moment with you! <br />
-            <span>Please confirm your attendance before <strong>July 7, 2026 </strong></span>  </RsvpSectionSubtitle>
+            <span>Please confirm your attendance before <strong>July 30, 2026 </strong></span>  </RsvpSectionSubtitle>
             <RsvpSectionDescription><br />Enter the <strong>first 3 letters</strong> of your name and click on the suggestion that will appear. The tickets section will be filled in automatically.<br /><br />As part of your RSVP, we ask guests to share their arrival details, dietary restrictions, and any allergies to help us prepare for the wedding weekend.<br /><br />Before clicking "SEND", make sure everything is correct, as it won't be possible to modify once submitted. </RsvpSectionDescription>
             <FormContainer>
                 <GuestForm/>
