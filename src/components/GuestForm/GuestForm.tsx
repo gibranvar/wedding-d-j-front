@@ -208,7 +208,7 @@ const handleSubmit = (e: React.FormEvent) => {
         );
       });
   };
-  const rsvpDeadline = new Date('2026-07-07T23:59:59');
+  const rsvpDeadline = new Date('2026-07-30T23:59:59');
 
   const isRsvpClosed = new Date() > rsvpDeadline;
 
