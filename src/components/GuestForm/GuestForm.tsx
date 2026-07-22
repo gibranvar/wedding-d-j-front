@@ -169,7 +169,7 @@ const handleSubmit = (e: React.FormEvent) => {
   }
 
     axios
-      .post("https://web-production-82204.up.railway.app/update-guest", {
+      .post("https://web-production-82204.up.railway.app/api/update-guest", {
         name: selectedName,
         tickets,
         telephone,
